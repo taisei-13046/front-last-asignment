@@ -1,0 +1,25 @@
+@use "../../variables" as *;
+
+.news-title-wrapper {
+	display: flex;
+	align-items: center;
+	color: $black;
+
+	.news-title {
+		margin: 0;
+		line-height: 29px;
+		font-size: $fontsize-l;
+		font-family: $fontfamily-mincho;
+		font-weight: 400;
+
+		@media  screen and (min-width: $breakpoint-md) {
+			line-height: 57px;
+			font-size: $fontsize-xl;
+		}
+	}
+
+	.news-sub-title {
+		margin-left: 16px;
+		font-size: $fontsize-m;
+	}
+}
